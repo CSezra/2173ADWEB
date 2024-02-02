@@ -1,0 +1,16 @@
+body {
+  padding-top: 56px; /* Adjust this value to account for the fixed navbar height */
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  color: #007bff;
+}
+
+.card {
+  margin-bottom: 20px;
+}

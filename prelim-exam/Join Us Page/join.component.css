@@ -1,0 +1,27 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: white; 
+  }
+  
+  .hero-image-container {
+    overflow: hidden;
+    height: 200px; 
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form {
+    text-align: center;
+  }

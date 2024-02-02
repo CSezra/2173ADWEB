@@ -1,0 +1,25 @@
+<!-- join-us.component.html -->
+
+<header class="hero">
+    <div class="hero-image-container">
+      <img src="assets/home.jpg" alt="Hero Image" class="hero-image">
+    </div>
+    <div class="hero-text">
+      <h1>Join Us Page</h1>
+      <p>Enter your information to join us!</p>
+    </div>
+  </header>
+  <hr>
+  <div class="form">
+    <h2>Fill the form below:</h2>
+    <p>First Name: <input type="text" placeholder="Enter your First Name"></p>
+  <p>Last Name: <input type="text"  placeholder="Enter your Last Name"></p>
+  <p>Email Address: <input type="text"  placeholder="Enter your Email Address"></p>
+  <p>Institution/Affiliation: <input type="text"  placeholder="Enter your Institution/Affiliation"></p>
+    <button (click)="onJoinButtonClick()">Join us!</button>
+  
+    <div *ngIf="message">
+      <p>{{ message }}</p>
+    </div>
+  </div>
+  

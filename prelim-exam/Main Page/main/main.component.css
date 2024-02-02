@@ -1,0 +1,45 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: white; 
+}
+
+.hero-image-container {
+  overflow: hidden;
+  height: 200px; 
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+  .custom-card {
+    margin-bottom: 20px;
+  }
+  
+  
+  .custom-card img {
+    max-height: 200px; 
+    object-fit: cover; 
+  }
+  
+  /* Optional: Add media queries for responsiveness */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 40px 0;
+    }
+  
+    /* Adjust styles for smaller screens */
+    .custom-card img {
+      max-height: 150px; /* Adjust maximum height for smaller screens */
+    }
+  }

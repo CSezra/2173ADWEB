@@ -1,0 +1,32 @@
+<header class="hero">
+    <div class="hero-image-container">
+        <img src="assets/home.jpg" alt="Hero Image" class="hero-image">
+    </div>
+    <div class="hero-text">
+        <h1>About the Organization</h1>
+        <p>Learn how the team and committee leadership are shaping the world of conferences, get the latest
+            conference news and updates on our blog, and contact us for guidance
+        </p>
+    </div>
+  </header>
+
+  <div class="container mt-4">
+    <h2>About Page</h2>
+    <p>We believe in transparency, coorperation globally, and the free exchange of talent and ideas.
+     A forumfor sharing of these technical and humanitarian discussion is given for meetings, conferences and other event.
+     We are also committed to creating a secure, constructive and supportive atmosphere for all participants in conferences,
+     activities and meeting who participate in these discussions with us.
+    </p>
+  
+    <button (click)="onButtonClick()">Click here to get a FREE Gift!</button>
+  
+    <div *ngIf="message">
+      <p>{{ message }}</p>
+    </div>
+    <br>
+    <br>
+
+    <p>Conferences are a part of the legacy of this organization and continue today to be catalyst for creativity.
+        We are committed to developing strategies that support and expand the conference activities throughout the world.
+    </p>
+  </div>

@@ -1,0 +1,23 @@
+.hero {
+    position: relative;
+    text-align: center;
+    color: white; /* Set the text color to match your design */
+}
+
+.hero-image-container {
+    overflow: hidden;
+    height: 200px; /* Adjust the height as needed */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

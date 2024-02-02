@@ -1,0 +1,40 @@
+<!-- partners.component.html -->
+<header class="hero">
+    <div class="hero-image-container">
+        <img src="assets/home.jpg" alt="Hero Image" class="hero-image">
+    </div>
+    <div class="hero-text">
+        <h1>Our Partners</h1>
+        <p>You can achive a very impressive effect by using our animated navbar, which is tarnsparent
+            on start, and chane the color after the scroll
+        </p>
+    </div>
+</header>
+
+<hr>
+
+<!-- Using *ngFor Directive -->
+<h3 class="p-3 text-center">Below are our Corporate Partners</h3> 
+
+<div class="container"> 
+    <table class="table table-striped table-bordered" border="1"> 
+        <thead> 
+            <tr> 
+                <th>Company</th> 
+                <th>Trademark</th> 
+                <th>Sponsorship</th> 
+            </tr> 
+        </thead> 
+        <tbody> 
+            <tr *ngFor="let partner of partners"> 
+                <td>{{ partner.Company }}</td> 
+                <td>
+                    <div>
+                        <img [src]="partner.trademark.imageUrl" [width]="imageW" [height]="imageH" alt="{{ partner.Company }} Image">
+                    </div>
+                </td> 
+                <td>{{ partner.sponsorship }}</td> 
+            </tr> 
+        </tbody> 
+    </table> 
+</div>
