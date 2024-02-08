@@ -1,0 +1,89 @@
+<div clas = "container">
+  <div class="card">
+    <div class = 'card-header'>
+    <h1>Adding Parameters</h1>
+     </div>
+    <div class = 'card-body'>
+    <p>Today's date :- {{presentDate}} </p>
+  </div>
+</div>
+<br>
+
+<div class="card">
+  <div class = 'card-header'>
+    <h1>Text Format Pipe</h1>
+  </div>
+  <div class = 'card-body'>
+    <p>Date with uppercase :- {{presentDate | date:'fullDate' |  uppercase}}<br>
+      Date with lowercase :- {{presentDate | date:'medium' | lowercase}}</p>
+  </div>
+</div>
+<br>
+
+<div class="card">
+    <div class = 'card-header'>
+      <h1>Date Pipes</h1>
+      </div>
+        <div class = 'card-body'>
+          <p>This is a short date:- {{presentDate | date:'shortDate' }}<br>
+            This line shows the full date:- {{presentDate | date:'fullDate'}}<br>
+            This will the formatted date:- {{presentDate | date:'M/dd/yyyy'}}<br>
+            This indicates the hours and minutes:- {{presentDate | date:'h:mm'}}</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card">
+    <div class = 'card-header'>
+    <h1>Async Time</h1> 
+  </div>
+  <div class = 'card-body'>
+    <p>Seconds changing in Time: {{ time$ | async | date:'mediumTime' }}</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card">
+    <div class = 'card-header'>
+      <h1>CurrencyPipe</h1>
+    </div>
+    <div class = 'card-body'>
+        <p>{{price | currency: '':true}}</p>
+        <p>{{price | currency: 'INR'}}</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card">
+    <div class = 'card-header'>
+      <h1>SlicePipe</h1>
+    </div>
+    <div class = 'card-body'>
+        <p>Start index:- {{Fruits | slice:2}}</p>
+        <p>Start and end Index:- {{Fruits | slice:1:4}} </p>
+        <p>Negative index:- {{Fruits | slice:-2}}</p>
+        <p>Negative start and end index:- {{Fruits | slice:-4:-2}}</p>
+    </div>
+  </div>
+  <br>
+
+  <div class="card">
+    <div class = 'card-header'>
+      <h1>DecimalPipe</h1>
+    </div>
+    <div class = 'card-body'>
+      <p>Apply formmatting:- {{decimalNum1 | number:'3.1'}}</p>
+      <p>Apply formmating:- {{decimalNum1 | number:'2.1-4'}}</p>
+    </div>
+  </div>
+  <br>
+  
+  <div class="card">
+    <div class = 'card-header'>
+      <h1>JsonPipe</h1>
+    </div>
+      <div class = 'card-body'></div>
+        <p>Object {{data | json}}</p>
+      </div>
+  </div>
+
