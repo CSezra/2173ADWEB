@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Application</title>
+  <link rel="stylesheet" href="app.component.css">
+</head>
+<body>
+<p>Books Application</p>
+
+<input id="newBook" style="margin-bottom: 10px;" placeholder="Title">
+<br> <!-- Add a line break for separation -->
+<input id="newDesc" style="margin-bottom: 10px;" placeholder="Description">
+<br> <!-- Add a line break for separation -->
+<input id="newPrice" style="margin-bottom: 10px;" placeholder="Book Price">
+<br> <!-- Add a line break for separation -->
+<button style="margin-bottom: 10px;" (click)="addBook()">Add Book</button>
+<br> <!-- Add a line break for separation -->
+
+<h3 *ngFor="let book of books">
+  <b>* {{book.title}}</b>
+  <b> | {{book.desc}}</b>
+  <b> | {{book.price}}</b>  
+  <button (click)="deleteBook(book.id)">Delete Book</button>
+</h3>
+</body>
+</html>
